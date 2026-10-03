@@ -6,7 +6,7 @@ export const IMAGE_BASE_URL =
 export const tmdb = axios.create({
   baseURL: import.meta.env.VITE_TMDB_BASE_URL ?? "https://api.themoviedb.org/3",
   headers: {
-    Authorization: `Bearer ${import.meta.env.TMDB_TOKEN}`,
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
     Accept: "application/json",
   },
 });
